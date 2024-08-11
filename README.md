@@ -1,15 +1,12 @@
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Dr Gareth Roberts
 =========================================================================================================================================
 
-Senior Research Scientist
+Head of AI/Data Science Professional 
 -------------------------
 
 * 🌍  I'm based in Sydney, Australia
-* 🖥️  See my portfolio at [Personal Site](http://www.2.works)
 * ✉️  You can contact me at [gareth@zmail.com](mailto:gareth@zmail.com)
-* 🚀  I'm currently working on [Source Localisation](http://www.sourcelocalisation.au)
-* 🧠  I'm learning thought-chains in large language models
-* 🤝  I'm open to collaborating on commercial uses of deep learning AI
+* 🧠  I love thought-chains in large language models
 * ⚡  Heavy cognitive neuroscience background, theoretical cognitive science and AI, commercial mindset. stubborn intellectual that loves exploring new things
 
 <a href="https://www.twitter.com/Gar3th_Roberts" target="_blank" rel="noreferrer"><img
