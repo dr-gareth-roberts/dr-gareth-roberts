@@ -2,8 +2,9 @@ Hi! My name is Dr Gareth Roberts
 =========================================================================================================================================
 
 I work as an AI Consultant but have a PhD in Cognitive Neuroscience, Developmental Psychology and Artificiial Intelligence.
-I have worked as Chief Technology Officer, Head of Artificial Intelligence, and other such titles for a large number of companies across multiple verticles (eCommerce, Property Tech, Mining Exploration, Life Insurance).
 -------------------------
+
+I have worked as Chief Technology Officer, Head of Artificial Intelligence, and other such titles for a large number of companies across multiple verticles (eCommerce, Property Tech, Mining Exploration, Life Insurance).
 
 * 🌍  I'm based in Sydney, Australia but travel to Perth quite regularly. Love travelling.
 * ✉️  You can email me at [gareth@zmail.com](mailto:gareth@zmail.com) or [gareth.roberts@ieee.org](mailto:gareth.roberts@ieee.org).
