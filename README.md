@@ -1,16 +1,19 @@
 Hi! My name is Dr Gareth Roberts
 =========================================================================================================================================
 
-I work as an AI Consultant but 
+I work as an AI Consultant (specialising in end-to-end implementation of AI solutions both cloud-based and offline)
 -------------------------
 
 I have worked as Chief Technology Officer, Head of Artificial Intelligence, and other such titles for a large number of companies across multiple verticles (eCommerce, Property Tech, Mining Exploration, Life Insurance).
 I have a PhD in Cognitive Neuroscience, Developmental Psychology and Artificial Intelligence. I spent 5 years at the University of Sydney as a research fellow where I was involved in projects across multiple disciplines, institutes and schools (Psychology, Education, Learning, Cognitive Neuroscience, Neuroimaging Laboratories, Sleep Institute)
 
+About Me
+-------------------------
 * 🌍  I'm based in Sydney, Australia but travel to Perth quite regularly. Wife and I love travelling around the world.
 * ✉️  You can email me at [gareth@zmail.com](mailto:gareth@zmail.com) or [gareth.roberts@ieee.org](mailto:gareth.roberts@ieee.org).
 * 🧠  I love hacking large language models, running complex prompt chains, probing how they work, etc.
-* ⚡  Heavy cognitive neuroscience background, theoretical cognitive science and AI, commercial mindset. 
+* ⚡  Heavy cognitive neuroscience background, theoretical cognitive science and AI, commercial mindset.
+
 
 <a href="https://www.twitter.com/____gareth_____" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/twitter/follow/Gar3th_Roberts?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
