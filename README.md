@@ -14,11 +14,6 @@ About Me
 * 🧠  I love hacking large language models, running complex prompt chains, probing how they work, etc.
 * ⚡  Heavy cognitive neuroscience background, theoretical cognitive science and AI, commercial mindset.
 
-
-<a href="https://www.twitter.com/____gareth_____" target="_blank" rel="noreferrer"><img
-src="https://img.shields.io/twitter/follow/Gar3th_Roberts?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
-/></a>
-
 ### Skills
 
 <p align="left">
@@ -30,7 +25,6 @@ src="https://img.shields.io/twitter/follow/Gar3th_Roberts?logo=twitter&style=for
 <a href="https://graphql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg" width="36" height="36" alt="GraphQL" /></a>
 <a href="https://supabase.io/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg" width="36" height="36" alt="Supabase" /></a>
 </p>
-
 
 ### Socials
 
