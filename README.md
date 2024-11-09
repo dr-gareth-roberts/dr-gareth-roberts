@@ -10,9 +10,18 @@ I have a PhD in Cognitive Neuroscience, Developmental Psychology and Artificial 
 About Me
 -------------------------
 * 🌍  I'm based in Sydney, Australia but travel to Perth quite regularly. Wife and I love travelling around the world.
-* ✉️  You can email me at [gareth@zmail.com](mailto:gareth@zmail.com) or [gareth.roberts@ieee.org](mailto:gareth.roberts@ieee.org).
+* ✉️  You can email me at [gareth.roberts@ieee.org](mailto:gareth.roberts@ieee.org).
 * 🧠  I love hacking large language models, running complex prompt chains, probing how they work, etc.
 * ⚡  Heavy cognitive neuroscience background, theoretical cognitive science and AI, commercial mindset.
+
+
+Current Projects
+-------------------------
+- Simulating cognitive processes using LLMs
+- Advanced prompt engineering attacks and mitigation strategies
+- Developing a comprehensive framework for probing the inner worlds of LLMs
+- Trying to get multi-modal LLMs to solve basic fluid intelligence test items that were not in their training set (GPT4o and Claude 3.5 Sonnet perform below chance at the Cattell Culture Fair Intelligence Test - Scale 3 Form A)
+
 
 ### Skills
 
@@ -25,10 +34,6 @@ About Me
 <a href="https://graphql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg" width="36" height="36" alt="GraphQL" /></a>
 <a href="https://supabase.io/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg" width="36" height="36" alt="Supabase" /></a>
 </p>
-
-### Socials
-
-<a href="https://www.twitter.com/Gar3th_Roberts" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="32" height="32" /></a></p>
 
 ### Badges
 
