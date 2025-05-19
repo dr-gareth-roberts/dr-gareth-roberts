@@ -1,0 +1,10 @@
+---
+title: test
+date: 2025-05-19 22:49:00 +10:00
+---
+
+# Test
+
+This is me testing out using github as a blog.
+
+![enhanced_image.png](/uploads/enhanced_image.png)
