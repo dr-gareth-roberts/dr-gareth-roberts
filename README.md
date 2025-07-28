@@ -117,7 +117,7 @@ const garethRoberts = {
 
 <div align="center">
   
-  [![](https://custom-icon-badges.demolab.com/badge/2024_Present-Director_@_Hyperpriors-00D4FF?style=for-the-badge&logo=rocket&logoColor=white)](https://hyperpriors.com)
+  [![](https://custom-icon-badges.demolab.com/badge/2024%20Present-Director%20@%20Hyperpriors-00D4FF?style=for-the-badge&logo=rocket&logoColor=white)](https://hyperpriors.com)
   
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="600">
   
@@ -161,13 +161,12 @@ gantt
 <div align="center">
   
   <a href="https://www.neuroprompting.xyz">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dr-gareth-roberts&repo=neuroprompting&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=FF6B6B&text_color=FFFFFF" />
+    <img src="https://img.shields.io/badge/🧬%20Neuroprompting-Cognitive%20Science%20Meets%20Prompt%20Engineering-blueviolet?style=for-the-badge&labelColor=7B2CBF&color=9D4EDD">
   </a>
   
-  <br>
+  <br><br>
   
-  <img src="https://img.shields.io/badge/🧬_Neuroprompting-Cognitive_Science_Meets_Prompt_Engineering-blueviolet?style=for-the-badge&labelColor=7B2CBF&color=9D4EDD">
-  <img src="https://img.shields.io/badge/🧠_LLM_Personalisation-CBT_Inspired_AI_Framework-ff006e?style=for-the-badge&labelColor=C9184A&color=FF4365">
+  <img src="https://img.shields.io/badge/🧠%20LLM%20Personalisation-CBT%20Inspired%20AI%20Framework-ff006e?style=for-the-badge&labelColor=C9184A&color=FF4365">
   
 </div>
 
@@ -186,20 +185,20 @@ gantt
   <table>
     <tr>
       <td align="center">
-        <img src="https://img.shields.io/badge/dynamic/json?color=00D4FF&label=Processing%20Speed&query=speed&url=https://api.github.com/repos/dr-gareth-roberts/metrics&suffix=x%20faster&style=for-the-badge&logo=lightning&logoColor=white&labelColor=1A1B27" />
-        <br><b>4.4x</b>
+        <img src="https://img.shields.io/badge/Processing%20Speed-4.4x%20Faster-00D4FF?style=for-the-badge&logo=lightning&logoColor=white&labelColor=1A1B27" />
+        <br><b>AI Underwriting</b>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/dynamic/json?color=FF6B6B&label=Publications&query=publications&url=https://api.github.com/repos/dr-gareth-roberts/metrics&style=for-the-badge&logo=googlescholar&logoColor=white&labelColor=1A1B27" />
-        <br><b>14 Papers</b>
+        <img src="https://img.shields.io/badge/Publications-14%20Papers-FF6B6B?style=for-the-badge&logo=googlescholar&logoColor=white&labelColor=1A1B27" />
+        <br><b>Peer Reviewed</b>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/dynamic/json?color=4ECDC4&label=Experience&query=years&url=https://api.github.com/repos/dr-gareth-roberts/metrics&suffix=%20years&style=for-the-badge&logo=brain&logoColor=white&labelColor=1A1B27" />
-        <br><b>15+ Years</b>
+        <img src="https://img.shields.io/badge/Experience-15%2B%20Years-4ECDC4?style=for-the-badge&logo=brain&logoColor=white&labelColor=1A1B27" />
+        <br><b>AI & Neuroscience</b>
       </td>
       <td align="center">
-        <img src="https://img.shields.io/badge/dynamic/json?color=FFE66D&label=Certifications&query=certs&url=https://api.github.com/repos/dr-gareth-roberts/metrics&suffix=%2B&style=for-the-badge&logo=certificate&logoColor=black&labelColor=1A1B27" />
-        <br><b>20+ Certs</b>
+        <img src="https://img.shields.io/badge/Certifications-20%2B-FFE66D?style=for-the-badge&logo=certificate&logoColor=black&labelColor=1A1B27" />
+        <br><b>ML & Data Science</b>
       </td>
     </tr>
   </table>
@@ -282,10 +281,10 @@ gantt
 
 <div align="center">
   
-  <img src="https://img.shields.io/badge/AAAI-Member_643718-0069D9?style=for-the-badge&logo=robot&logoColor=white&labelColor=003D82">
-  <img src="https://img.shields.io/badge/ACM-Member_2394181-DC382D?style=for-the-badge&logo=acm&logoColor=white&labelColor=8B0000">
-  <img src="https://img.shields.io/badge/IEEE-Member_100496098-FF8C00?style=for-the-badge&logo=ieee&logoColor=white&labelColor=CC5500">
-  <img src="https://img.shields.io/badge/HBR-Technical_Advisory-1A1A1A?style=for-the-badge&logo=harvard&logoColor=white&labelColor=000000">
+  <img src="https://img.shields.io/badge/AAAI-Member%20643718-0069D9?style=for-the-badge&logo=robot&logoColor=white&labelColor=003D82">
+  <img src="https://img.shields.io/badge/ACM-Member%202394181-DC382D?style=for-the-badge&logo=acm&logoColor=white&labelColor=8B0000">
+  <img src="https://img.shields.io/badge/IEEE-Member%20100496098-FF8C00?style=for-the-badge&logo=ieee&logoColor=white&labelColor=CC5500">
+  <img src="https://img.shields.io/badge/HBR-Technical%20Advisory-1A1A1A?style=for-the-badge&logo=harvard&logoColor=white&labelColor=000000">
   
 </div>
 
