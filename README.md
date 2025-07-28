@@ -1,116 +1,308 @@
-# Gareth Roberts, Ph.D.
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=300&section=header&text=Dr.%20Gareth%20Roberts&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Principal%20AI%20Experience%20Architect%20%7C%20Cognitive%20Neuroscientist&descAlignY=55&descAlign=62" width="100%">
+</div>
 
 <div align="center">
   
-  **Principal AI Experience Architect | Cognitive Neuroscientist | Sydney, Australia**
-  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/dr-gareth-roberts)
-  [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:gareth.roberts@ieee.org)
-  [![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=YOUR_ID)
+  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=25&pause=1000&color=00D4FF&center=true&vCenter=true&random=false&width=1000&height=60&lines=%F0%9F%A7%A0+Bridging+Neuroscience+%26+Artificial+Intelligence+%F0%9F%A4%96;%E2%9A%A1+15%2B+Years+of+Human-Centered+AI+Innovation+%E2%9A%A1;%F0%9F%8C%8F+From+Western+Australia+to+Global+AI+Leadership+%F0%9F%8C%8F)](https://git.io/typing-svg)
   
 </div>
 
-## 👋 About Me
-
-Cognitive Neuroscientist and AI innovator with 15+ years applying psychological science to real-world AI systems. PhD in Cognitive Neuroscience & AI from University of Western Australia. Expert in human behaviour modelling, psychometric assessment, and ethical AI deployment with focus on human-centred AI that augments decision-making.
-
-## 🛠️ Technical Stack
-
 <div align="center">
-
-| Languages | AI/ML | Cloud & Infrastructure | Specialized |
-|:---------:|:-----:|:---------------------:|:-----------:|
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white) | EEG/fMRI Analysis |
-| ![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white) | ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) | Psychometric Modelling |
-| ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white) | ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) | ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white) | Behavioural Statistics |
-| ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) | ![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-FFD21E?style=for-the-badge) | ![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white) | Cognitive Architectures |
-
+  <a href="https://linkedin.com/in/dr-gareth-roberts">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5&color=00D4FF" />
+  </a>
+  <a href="mailto:gareth.roberts@ieee.org">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=FF6B6B" />
+  </a>
+  <a href="https://scholar.google.com/citations?user=DDcANiMAAAAJ">
+    <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white&labelColor=4285F4&color=4ECDC4" />
+  </a>
+  <a href="https://2.works">
+    <img src="https://img.shields.io/badge/Blog-FF5722?style=for-the-badge&logo=hashnode&logoColor=white&labelColor=FF5722&color=FFE66D" />
+  </a>
+  <a href="https://gareth.portfoliobox.net">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000000&color=A8E6CF" />
+  </a>
 </div>
 
-## 💼 Professional Experience
-
-### 🚀 **Director** | Hyperpriors
-`Feb 2024 - Present` • Sydney, Australia
-- Architect agentic AI systems modelling human decision-making processes
-- Design RAG pipelines with psychological grounding for human-aligned AI interactions
-- Develop behavioural AI evaluation frameworks assessing psychological validity
-
-### 🏥 **Head of Artificial Intelligence** | NEOS Insurance Group  
-`Apr 2023 - Feb 2024` • Sydney, Australia
-- Built generative AI underwriting assistant reducing processing time by 4.4x
-- Designed psychologically-informed prompt engineering strategies
-- Implemented conversational AI with appropriate empathy and cultural sensitivity
-- Established responsible AI governance aligned with APRA compliance
-
-### 🌍 **Chief Technology Officer** | Source Localisation
-`Jan 2022 - May 2023` • Sydney, Australia
-- Developed AI-assisted decision support tools for geospatial intelligence
-- Built collaborative AI workflows augmenting domain expert capabilities
-- Managed multidisciplinary team bridging earth sciences and cognitive systems
-
-### 🎓 **Postdoctoral Research Fellow** | University of Sydney
-`Aug 2016 - Dec 2021` • Sydney, Australia
-- Led research on cognitive architectures for planning and reasoning
-- Published studies on human intelligence assessment using neuroimaging
-- Supervised PhD students researching cognitive control and consciousness
-
-## 🚀 Featured Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### [Neuroprompting](https://www.neuroprompting.xyz)
-A collection of prompts drawing on cognitive neuroscience principles for better AI interactions
-
-</td>
-<td width="50%" valign="top">
-
-### LLM Personalisation Framework
-Theoretical framework for LLM personalisation based on cognitive behavioural therapy principles
-
-</td>
-</tr>
-</table>
-
-## 📊 GitHub Stats
+<br>
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dr-gareth-roberts&show_icons=true&theme=default&include_all_commits=true&count_private=true&hide_border=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dr-gareth-roberts&layout=compact&langs_count=8&theme=default&hide_border=true"/>
+  <img src="https://user-images.githubusercontent.com/74038190/238353480-219bcc70-f5dc-466b-9a60-29653d8e8433.gif" width="90%">
 </div>
-
-## 🎓 Education
-
-**PhD in Cognitive Neuroscience & Artificial Intelligence** • University of Western Australia (2009-2014)  
-**MBA** • Power Business School (2019-2020)  
-**BA Honours in Psychology (Double Major)** • University of Western Australia (2005-2009)
-
-## 📝 Recent Articles & Research
-
-- "Monitoring Reasoning Models for Misbehaviour and the Risks of Promoting Obfuscation" (2025)
-- "The AI Whisperers: Inside the DAN Attack That Transformed AI Safety" (2025)
-- "Understanding LLM Vulnerabilities Through Experimental Psychology Insights" (2024)
-- "The Hidden Psychology of Large Language Models" (2024)
-- 14 peer-reviewed publications on human cognition, intelligence, and decision-making
-
-## 🏆 Professional Affiliations
-
-- **AAAI** - Association for the Advancement of Artificial Intelligence (#643718)
-- **ACM** - Association for Computing Machinery (#2394181)
-- **IEEE** - Institute of Electrical and Electronics Engineers (#100496098)
-- **Harvard Business Review** - Technical Advisory Member
-
-## 🎤 Recent Speaking Engagements
-
-- **2023** - Speaker at Artificial Intelligence Conference, San Francisco
-- **2023** - Panelist on AI Safety and Ethics at CIO Top100 Summit
-- **2022** - Speaker on AI, Remote Sensing and Mining at IMARC
 
 ---
 
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=dr-gareth-roberts&theme=radical&hide_border=true&stroke=00D4FF&ring=00D4FF&fire=FF6B6B&currStreakNum=FFFFFF&sideNums=00D4FF&currStreakLabel=00D4FF&sideLabels=FFFFFF&dates=A8E6CF" width="100%">
+      </td>
+      <td align="center" width="50%">
+        <img src="https://github-readme-stats.vercel.app/api?username=dr-gareth-roberts&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=FF6B6B&text_color=FFFFFF" width="100%">
+      </td>
+    </tr>
+  </table>
+</div>
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&pause=1000&color=00D4FF&center=true&vCenter=true&random=false&width=500&height=70&lines=%F0%9F%A7%AC+About+Me+%F0%9F%A7%AC" alt="About Me">
+</h1>
+
+<div align="center">
+  <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width="350px">
+</div>
+
+```javascript
+const garethRoberts = {
+    title: "Principal AI Experience Architect",
+    location: "Sydney, Australia 🌏",
+    background: {
+        neuroscience: "PhD Cognitive Neuroscience & AI",
+        psychology: "BA Honours (Double Major)",
+        business: "MBA - Lean Innovation"
+    },
+    currentMission: [
+        "🧠 Architecting AI with cognitive science principles",
+        "🤝 Building human-centered AI experiences",
+        "⚡ Transforming enterprises with ethical AI",
+        "🔬 Bridging research and real-world applications"
+    ],
+    achievements: {
+        experience: "15+ years",
+        publications: 14,
+        speedImprovement: "4.4x",
+        certifications: "20+"
+    },
+    philosophy: "Bridging how brains think & machines learn 🌉"
+};
+```
+
+<br clear="right"/>
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&pause=1000&color=FF6B6B&center=true&vCenter=true&random=false&width=500&height=70&lines=%E2%9A%A1+Tech+Arsenal+%E2%9A%A1" alt="Tech Arsenal">
+</h1>
+
 <div align="center">
   
-  ![Profile Views](https://komarev.com/ghpvc/?username=dr-gareth-roberts&color=blue&style=flat)
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,r,matlab,aws,azure,gcp,docker,kubernetes,git,vscode&theme=dark" />
+  
+  <br><br>
+  
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white&labelColor=1C3C3C&color=00D4FF">
+  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black&labelColor=FFD21E&color=FF6B6B">
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=412991&color=4ECDC4">
+  <img src="https://img.shields.io/badge/Anthropic-191919?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=191919&color=A8E6CF">
   
 </div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=dr-gareth-roberts&theme=react-dark&hide_border=true&area=true&custom_title=Contribution%20Wave%20Pattern" width="90%">
+</div>
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&pause=1000&color=4ECDC4&center=true&vCenter=true&random=false&width=600&height=70&lines=%F0%9F%9A%80+Career+Trajectory+%F0%9F%9A%80" alt="Career">
+</h1>
+
+<div align="center">
+  
+  [![](https://custom-icon-badges.demolab.com/badge/2024_Present-Director_@_Hyperpriors-00D4FF?style=for-the-badge&logo=rocket&logoColor=white)](https://hyperpriors.com)
+  
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="600">
+  
+</div>
+
+<details>
+<summary><b>🎯 Click for Full Career Timeline</b></summary>
+
+<br>
+
+```mermaid
+gantt
+    title 🧠 Professional Journey
+    dateFormat  YYYY-MM
+    section Leadership
+    Director @ Hyperpriors           :active, 2024-02, 2025-12
+    Head of AI @ NEOS Insurance      :done, 2023-04, 2024-02
+    CTO @ Source Localisation        :done, 2022-01, 2023-05
+    section Research
+    Postdoc @ University of Sydney   :done, 2016-08, 2021-12
+    PhD Research @ UWA               :done, 2009-01, 2014-12
+```
+
+### 🏥 **NEOS Insurance Group** | Head of AI
+> 🎯 **4.4x faster processing** | 🧠 **Psychologically-informed AI** | 🛡️ **APRA Compliant**
+
+### 🌍 **Source Localisation** | Chief Technology Officer  
+> 🛰️ **Geospatial AI** | 🤝 **Human-AI Collaboration** | 👥 **Cross-functional Leadership**
+
+### 🎓 **University of Sydney** | Postdoctoral Fellow
+> 📚 **14 Publications** | 🧬 **Cognitive Architectures** | 👨‍🏫 **PhD Supervision**
+
+</details>
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&pause=1000&color=FFE66D&center=true&vCenter=true&random=false&width=500&height=70&lines=%F0%9F%8E%AF+Featured+Work+%F0%9F%8E%AF" alt="Featured Work">
+</h1>
+
+<div align="center">
+  
+  <a href="https://www.neuroprompting.xyz">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dr-gareth-roberts&repo=neuroprompting&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=FF6B6B&text_color=FFFFFF" />
+  </a>
+  
+  <br>
+  
+  <img src="https://img.shields.io/badge/🧬_Neuroprompting-Cognitive_Science_Meets_Prompt_Engineering-blueviolet?style=for-the-badge&labelColor=7B2CBF&color=9D4EDD">
+  <img src="https://img.shields.io/badge/🧠_LLM_Personalisation-CBT_Inspired_AI_Framework-ff006e?style=for-the-badge&labelColor=C9184A&color=FF4365">
+  
+</div>
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&pause=1000&color=A8E6CF&center=true&vCenter=true&random=false&width=600&height=70&lines=%F0%9F%93%8A+Impact+Metrics+%F0%9F%93%8A" alt="Impact">
+</h1>
+
+<div align="center">
+  
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dr-gareth-roberts&theme=radical" width="90%">
+  
+  <br>
+  
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/dynamic/json?color=00D4FF&label=Processing%20Speed&query=speed&url=https://api.github.com/repos/dr-gareth-roberts/metrics&suffix=x%20faster&style=for-the-badge&logo=lightning&logoColor=white&labelColor=1A1B27" />
+        <br><b>4.4x</b>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/dynamic/json?color=FF6B6B&label=Publications&query=publications&url=https://api.github.com/repos/dr-gareth-roberts/metrics&style=for-the-badge&logo=googlescholar&logoColor=white&labelColor=1A1B27" />
+        <br><b>14 Papers</b>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/dynamic/json?color=4ECDC4&label=Experience&query=years&url=https://api.github.com/repos/dr-gareth-roberts/metrics&suffix=%20years&style=for-the-badge&logo=brain&logoColor=white&labelColor=1A1B27" />
+        <br><b>15+ Years</b>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/dynamic/json?color=FFE66D&label=Certifications&query=certs&url=https://api.github.com/repos/dr-gareth-roberts/metrics&suffix=%2B&style=for-the-badge&logo=certificate&logoColor=black&labelColor=1A1B27" />
+        <br><b>20+ Certs</b>
+      </td>
+    </tr>
+  </table>
+  
+</div>
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&pause=1000&color=FF6B6B&center=true&vCenter=true&random=false&width=700&height=70&lines=%F0%9F%8E%93+Academic+Credentials+%F0%9F%8E%93" alt="Education">
+</h1>
+
+<div align="center">
+  
+  ```mermaid
+  %%{init: {'theme':'dark'}}%%
+  graph LR
+      A[2005-2009<br/>BA Psychology] -->|Honours| B[2009-2014<br/>PhD Neuroscience & AI]
+      B -->|Research| C[2016-2021<br/>Postdoc Sydney]
+      B -->|Business| D[2019-2020<br/>MBA]
+      C --> E[2022-Present<br/>AI Leadership]
+      D --> E
+      
+      style A fill:#FF6B6B,stroke:#fff,stroke-width:2px,color:#000
+      style B fill:#4ECDC4,stroke:#fff,stroke-width:2px,color:#000
+      style C fill:#FFE66D,stroke:#fff,stroke-width:2px,color:#000
+      style D fill:#A8E6CF,stroke:#fff,stroke-width:2px,color:#000
+      style E fill:#00D4FF,stroke:#fff,stroke-width:2px,color:#000
+  ```
+  
+</div>
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&pause=1000&color=4ECDC4&center=true&vCenter=true&random=false&width=800&height=70&lines=%F0%9F%93%9A+Thought+Leadership+%F0%9F%93%9A" alt="Publications">
+</h1>
+
+<div align="center">
+  
+  <details>
+  <summary><b>🔥 Latest AI & Neuroscience Insights (Click to Expand)</b></summary>
+  
+  <br>
+  
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/2025-AI_Whisperers-FF006E?style=flat-square&logo=medium&logoColor=white">
+        <br><b>DAN Attack Analysis</b>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/2025-Reasoning_Models-3F37C9?style=flat-square&logo=arxiv&logoColor=white">
+        <br><b>AI Misbehaviour</b>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/2024-LLM_Psychology-00B4D8?style=flat-square&logo=brain&logoColor=white">
+        <br><b>Hidden Behaviours</b>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/2024-Vulnerabilities-7209B7?style=flat-square&logo=shield&logoColor=white">
+        <br><b>Security Psychology</b>
+      </td>
+    </tr>
+  </table>
+  
+  <br>
+  
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&quote=14%20peer-reviewed%20publications%20on%20human%20cognition%2C%20intelligence%2C%20and%20decision-making&author=Research%20Impact" width="80%">
+  
+  </details>
+  
+</div>
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&pause=1000&color=A8E6CF&center=true&vCenter=true&random=false&width=700&height=70&lines=%F0%9F%8C%90+Professional+Network+%F0%9F%8C%90" alt="Network">
+</h1>
+
+<div align="center">
+  
+  <img src="https://img.shields.io/badge/AAAI-Member_643718-0069D9?style=for-the-badge&logo=robot&logoColor=white&labelColor=003D82">
+  <img src="https://img.shields.io/badge/ACM-Member_2394181-DC382D?style=for-the-badge&logo=acm&logoColor=white&labelColor=8B0000">
+  <img src="https://img.shields.io/badge/IEEE-Member_100496098-FF8C00?style=for-the-badge&logo=ieee&logoColor=white&labelColor=CC5500">
+  <img src="https://img.shields.io/badge/HBR-Technical_Advisory-1A1A1A?style=for-the-badge&logo=harvard&logoColor=white&labelColor=000000">
+  
+</div>
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+<div align="center">
+  
+  <img src="https://user-images.githubusercontent.com/74038190/221352987-68da234d-4d62-4e9d-9d7f-098dc657c2dc.gif" width="500">
+  
+  <h2>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=30&pause=1000&color=00D4FF&center=true&vCenter=true&random=false&width=800&height=60&lines=%F0%9F%92%A1+Bridging+the+gap+between+how+brains+think+%26+machines+learn+%F0%9F%92%A1" alt="Philosophy">
+  </h2>
+  
+  <br>
+  
+  <img src="https://komarev.com/ghpvc/?username=dr-gareth-roberts&color=00D4FF&style=for-the-badge&label=PROFILE+VIEWS">
+  
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=120&section=footer&animation=fadeIn" width="100%">
