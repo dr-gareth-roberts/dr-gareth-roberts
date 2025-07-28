@@ -108,18 +108,37 @@
 
 <p><details>
 <summary><b>🎯 Click for Full Career Timeline</b></summary></p>
+  
 
-<p><br></p>
-<pre><code class="mermaid">gantt
-    title 🧠 Professional Journey
-    dateFormat  YYYY-MM
-    section Leadership
-    Director @ Hyperpriors           :active, 2024-02, 2025-12
-    Head of AI @ NEOS Insurance      :done, 2023-04, 2024-02
-    CTO @ Source Localisation        :done, 2022-01, 2023-05
-    section Research
-    Postdoc @ University of Sydney   :done, 2016-08, 2021-12
-    PhD Research @ UWA               :done, 2009-01, 2014-12</code></pre>
+<br>
+
+  
+
+```mermaid
+
+gantt
+
+    title 🧠 Professional Journey
+
+    dateFormat  YYYY-MM
+
+    section Leadership
+
+    Director @ Hyperpriors           :active, 2024-02, 2025-12
+
+    Head of AI @ NEOS Insurance      :done, 2023-04, 2024-02
+
+    CTO @ Source Localisation        :done, 2022-01, 2023-05
+
+    section Research
+
+    Postdoc @ University of Sydney   :done, 2016-08, 2021-12
+
+    PhD Research @ UWA               :done, 2009-01, 2014-12
+
+```
+
+</details>
 
 <h3 id="%F0%9F%8F%A5neosinsurancegroupheadofai">🏥 <strong>NEOS Insurance Group</strong> | Head of AI</h3>
 
