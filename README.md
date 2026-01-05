@@ -5,7 +5,7 @@
 
 <p><a href="https://linkedin.com/in/dr-gareth-roberts"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a><br/>
 <a href="mailto:gareth.roberts@ieee.org"><img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a><br/>
-<a href="https://scholar.google.com/citations?user=DDcANiMAAAAJ"><img src="https://img.shields.io/badge/Google_Scholar-Publications-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar" /></a><br/>
+<a href="https://scholar.google.com/citations?hl=en&user=NyJ5KocAAAAJ"><img src="https://img.shields.io/badge/Google_Scholar-Publications-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar" /></a><br/>
 <a href="https://2.works"><img src="https://img.shields.io/badge/Blog-2.works-FF5722?style=for-the-badge&logo=hashnode&logoColor=white" alt="Blog" /></a><br/>
 <a href="https://gareth.portfoliobox.net"><img src="https://img.shields.io/badge/Portfolio-View-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a></p>
 </div>
