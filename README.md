@@ -1,193 +1,179 @@
-<h1 id="dr.garethroberts">Dr. Gareth Roberts</h1>
 <div align="center">
 
-<p><strong>Senior AI Researcher | Sydney, Australia</strong></p>
+# Dr. Gareth Roberts
 
-<p><a href="https://linkedin.com/in/dr-gareth-roberts"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a><br/>
-<a href="mailto:gareth.roberts@ieee.org"><img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a><br/>
-<a href="https://scholar.google.com/citations?hl=en&user=NyJ5KocAAAAJ"><img src="https://img.shields.io/badge/Google_Scholar-Publications-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar" /></a><br/>
-<a href="https://2.works"><img src="https://img.shields.io/badge/Blog-2.works-FF5722?style=for-the-badge&logo=hashnode&logoColor=white" alt="Blog" /></a><br/>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Senior+AI+Researcher+%7C+Sydney%2C+Australia;Bridging+Cognitive+Neuroscience+%26+AI;15%2B+Years+in+Human-Centered+AI+Design)](https://git.io/typing-svg)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/dr-gareth-roberts)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gareth.roberts@ieee.org)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-Publications-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?hl=en&user=NyJ5KocAAAAJ)
+[![Blog](https://img.shields.io/badge/Blog-2.works-FF5722?style=for-the-badge&logo=hashnode&logoColor=white)](https://2.works)
+
+![Profile Views](https://komarev.com/ghpvc/?username=dr-gareth-roberts&color=58A6FF&style=flat-square&label=Profile+Views)
+
 </div>
 
-<hr />
+---
 
-<h2 id="%F0%9F%A7%A0about">🧠 About</h2>
+## 🧠 About
 
-<p>Senior AI Researcher with 15+ years applying cognitive neuroscience principles to artificial intelligence systems. PhD in Cognitive Neuroscience &amp; AI from University of Western Australia. Specializing in human-centered AI design, psychometric modeling, and ethical AI deployment in enterprise environments.</p>
+Senior AI Researcher with **15+ years** applying cognitive neuroscience principles to artificial intelligence systems. **PhD in Cognitive Neuroscience & AI** from University of Western Australia. Specializing in human-centered AI design, psychometric modeling, and ethical AI deployment in enterprise environments.
 
-<h2 id="%F0%9F%92%BCprofessionalexperience">💼 Professional Experience</h2>
+### 🔭 Currently Working On
 
-<h3 id="%F0%9F%8F%A2directorhyperpriors">🏢 Director | Hyperpriors</h3>
+- 🧪 Developing cognitive-inspired architectures for AI alignment research
+- 📝 Writing about AI safety and LLM behavior on [2.works](https://2.works)
+- 🤝 Consulting on human-centered AI solutions at [Hyperpriors](https://hyperpriors.com)
 
-<p><code>February 2024 - Present</code> | Sydney, Australia</p>
+---
 
-<blockquote>
-<p>Leading boutique AI consultancy specializing in cognitive science-informed AI solutions</p>
-</blockquote>
+## 💼 Professional Experience
 
-<ul>
-<li>Architect agentic AI systems modeling human decision-making processes</li>
-<li>Design RAG pipelines with psychological grounding for human-aligned AI interactions</li>
-<li>Develop behavioral AI evaluation frameworks assessing psychological validity and user trust</li>
-</ul>
+### 🏢 Director | Hyperpriors
+`February 2024 - Present` | Sydney, Australia
 
-<h3 id="%F0%9F%A4%96headofartificialintelligenceneosinsurancegroup">🤖 Head of Artificial Intelligence | NEOS Insurance Group</h3>
+> Leading boutique AI consultancy specializing in cognitive science-informed AI solutions
 
-<p><code>April 2023 - February 2024</code> | Sydney, Australia</p>
+- Architect agentic AI systems modeling human decision-making processes
+- Design RAG pipelines with psychological grounding for human-aligned AI interactions
+- Develop behavioral AI evaluation frameworks assessing psychological validity and user trust
 
-<blockquote>
-<p><strong>Key Achievement:</strong> 4.4x processing speed improvement through generative AI</p>
-</blockquote>
+### 🤖 Head of Artificial Intelligence | NEOS Insurance Group
+`April 2023 - February 2024` | Sydney, Australia
 
-<ul>
-<li>Built generative AI underwriting assistant achieving 4.4x processing speed improvement</li>
-<li>Designed psychologically-informed prompt engineering strategies for nuanced decision-making</li>
-<li>Implemented conversational AI with appropriate empathy and cultural sensitivity</li>
-<li>Established APRA-compliant responsible AI governance framework</li>
-</ul>
+> **Key Achievement:** 4.4x processing speed improvement through generative AI
 
-<h3 id="%F0%9F%8C%8Dchieftechnologyofficersourcelocalisation">🌍 Chief Technology Officer | Source Localisation</h3>
+- Built generative AI underwriting assistant achieving 4.4x processing speed improvement
+- Designed psychologically-informed prompt engineering strategies for nuanced decision-making
+- Implemented conversational AI with appropriate empathy and cultural sensitivity
+- Established APRA-compliant responsible AI governance framework
 
-<p><code>January 2022 - May 2023</code> | Sydney, Australia</p>
+### 🌍 Chief Technology Officer | Source Localisation
+`January 2022 - May 2023` | Sydney, Australia
 
-<blockquote>
-<p>Applied cognitive modeling to geospatial intelligence</p>
-</blockquote>
+> Applied cognitive modeling to geospatial intelligence
 
-<ul>
-<li>Developed AI-assisted decision support tools for geospatial intelligence</li>
-<li>Built collaborative AI workflows augmenting domain expert capabilities</li>
-<li>Led multidisciplinary team bridging earth sciences and cognitive systems</li>
-</ul>
+- Developed AI-assisted decision support tools for geospatial intelligence
+- Built collaborative AI workflows augmenting domain expert capabilities
+- Led multidisciplinary team bridging earth sciences and cognitive systems
 
-<h3 id="%F0%9F%8E%93postdoctoralresearchfellowuniversityofsydney">🎓 Postdoctoral Research Fellow | University of Sydney</h3>
+### 🎓 Postdoctoral Research Fellow | University of Sydney
+`August 2016 - December 2021` | Sydney, Australia
 
-<p><code>August 2016 - December 2021</code> | Sydney, Australia</p>
+> 14 peer-reviewed publications | PhD supervision | Cognitive architectures research
 
-<blockquote>
-<p>14 peer-reviewed publications | PhD supervision | Cognitive architectures research</p>
-</blockquote>
+- Conducted research on cognitive architectures for planning and reasoning
+- Published 14 peer-reviewed papers on human intelligence assessment and neuroimaging
+- Supervised PhD students researching cognitive control, attention, and consciousness
 
-<ul>
-<li>Conducted research on cognitive architectures for planning and reasoning</li>
-<li>Published 14 peer-reviewed papers on human intelligence assessment and neuroimaging</li>
-<li>Supervised PhD students researching cognitive control, attention, and consciousness</li>
-</ul>
+---
 
-<h2 id="%F0%9F%9B%A0%EF%B8%8Ftechnicalexpertise">🛠️ Technical Expertise</h2>
+## 🛠️ Technical Expertise
+
+### Languages & Frameworks
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+
+### AI/ML Technologies
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![JAX](https://img.shields.io/badge/JAX-A435F0?style=for-the-badge&logo=google&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+
+### Specialized Skills
+![Cognitive Science](https://img.shields.io/badge/Cognitive_Science-FF6B6B?style=flat-square)
+![EEG/fMRI Analysis](https://img.shields.io/badge/EEG%2FfMRI_Analysis-4ECDC4?style=flat-square)
+![Psychometric Modeling](https://img.shields.io/badge/Psychometric_Modeling-45B7D1?style=flat-square)
+![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-96CEB4?style=flat-square)
+![RAG Architectures](https://img.shields.io/badge/RAG_Architectures-FFEAA7?style=flat-square)
+![Ethical AI](https://img.shields.io/badge/Ethical_AI-DDA0DD?style=flat-square)
+
+---
+
+## 🎓 Education
+
+| Degree | Institution | Year | Focus |
+|--------|-------------|------|-------|
+| **PhD in Cognitive Neuroscience & AI** | University of Western Australia | 2009–2014 | Neuroimaging studies of verbal instruction processing |
+| **MBA** | Power Business School | 2019–2020 | Lean innovation and product strategy |
+| **BA Honours in Psychology** (Double Major) | University of Western Australia | 2005–2009 | Cognitive psychology and neuroscience |
+
+---
+
+## 📚 Selected Publications & Presentations
+
+### Recent Articles
+- 📄 "Monitoring Reasoning Models for Misbehaviour and the Risks of Promoting Obfuscation" (2025)
+- 📄 "The AI Whisperers: Inside the DAN Attack That Transformed AI Safety" (2025)
+- 📄 "Understanding LLM Vulnerabilities Through Experimental Psychology Insights" (2024)
+- 📄 "The Hidden Psychology of Large Language Models" (2024)
+
+### Academic Publications
+- 📊 14 peer-reviewed publications on human cognition, intelligence, and decision-making
+- 📈 **h-index: 12** | **Citations: 450+**
+
+### Conference Presentations
+- 🎤 Speaker, Artificial Intelligence Conference, San Francisco (2023)
+- 🎤 Panelist, CIO Top100 Summit - AI Safety and Ethics (2023)
+- 🎤 Speaker, IMARC - AI Applications in Mining (2022)
+
+---
+
+## 🚀 Projects
+
 <table>
 <tr>
-<td valign="top" width="33%">
+<td width="50%">
 
-<p><strong>Languages &amp; Frameworks</strong><br/>
-- Python<br/>
-- R<br/>
-- MATLAB<br/>
-- JavaScript/TypeScript<br/>
-- SQL</p>
+### [Neuroprompting](https://www.neuroprompting.xyz)
+A comprehensive guide to prompt engineering based on cognitive neuroscience principles, bridging psychological understanding with practical AI interaction techniques.
 
-<p></td>
-<td valign="top" width="33%"></p>
+</td>
+<td width="50%">
 
-<p><strong>AI/ML Technologies</strong><br/>
-- PyTorch, TensorFlow, JAX<br/>
-- LangChain, Hugging Face<br/>
-- RAG architectures<br/>
-- Multi-agent systems<br/>
-- Prompt engineering</p>
+### LLM Personalization Framework
+Theoretical framework for personalizing large language models based on cognitive behavioral therapy principles, focusing on ethical adaptation and user-centered design.
 
-<p></td>
-<td valign="top" width="33%"></p>
-
-<p><strong>Specialized Skills</strong><br/>
-- EEG/fMRI analysis<br/>
-- Psychometric modeling<br/>
-- Cognitive architectures<br/>
-- Ethical AI frameworks<br/>
-- GDPR compliance</p>
 </td>
 </tr>
 </table>
 
-<h2 id="%F0%9F%8E%93education">🎓 Education</h2>
+---
 
-<ul>
-<li><p><strong>PhD in Cognitive Neuroscience &amp; Artificial Intelligence</strong> | University of Western Australia (2009&#8211;2014) </p></li>
-<li><p>Dissertation: Neuroimaging studies of verbal instruction processing in frontoparietal cortex</p></li>
-<li><p><strong>MBA</strong> | Power Business School (2019&#8211;2020) </p></li>
-<li><p>Focus: Lean innovation and product strategy</p></li>
-<li><p><strong>BA Honours in Psychology</strong> (Double Major) | University of Western Australia (2005&#8211;2009) </p></li>
-<li><p>Specialization: Cognitive psychology and neuroscience</p></li>
-</ul>
+## 🏆 Professional Affiliations
 
-<h2 id="%F0%9F%93%9Aselectedpublicationspresentations">📚 Selected Publications &amp; Presentations</h2>
+| Organization | Role |
+|--------------|------|
+| **Association for the Advancement of Artificial Intelligence (AAAI)** | Member #643718 |
+| **Association for Computing Machinery (ACM)** | Member #2394181 |
+| **Institute of Electrical and Electronics Engineers (IEEE)** | Member #100496098 |
+| **Harvard Business Review** | Technical Advisory Member |
 
-<h3 id="recentarticles">Recent Articles</h3>
+---
 
-<ul>
-<li>&#8220;Monitoring Reasoning Models for Misbehaviour and the Risks of Promoting Obfuscation&#8221; (2025)</li>
-<li>&#8220;The AI Whisperers: Inside the DAN Attack That Transformed AI Safety&#8221; (2025)</li>
-<li>&#8220;Understanding LLM Vulnerabilities Through Experimental Psychology Insights&#8221; (2024)</li>
-<li>&#8220;The Hidden Psychology of Large Language Models&#8221; (2024)</li>
-</ul>
+## 📊 GitHub Statistics
 
-<h3 id="academicpublications">Academic Publications</h3>
-
-<ul>
-<li>14 peer-reviewed publications on human cognition, intelligence, and decision-making</li>
-<li>h-index: 12 | Citations: 450+</li>
-</ul>
-
-<h3 id="conferencepresentations">Conference Presentations</h3>
-
-<ul>
-<li>Speaker, Artificial Intelligence Conference, San Francisco (2023)</li>
-<li>Panelist, CIO Top100 Summit - AI Safety and Ethics (2023)</li>
-<li>Speaker, IMARC - AI Applications in Mining (2022)</li>
-</ul>
-
-<h2 id="%F0%9F%9A%80projects">🚀 Projects</h2>
-
-<h3 id="neuroprompting"><a href="https://www.neuroprompting.xyz">Neuroprompting</a></h3>
-
-<p>A comprehensive guide to prompt engineering based on cognitive neuroscience principles, bridging psychological understanding with practical AI interaction techniques.</p>
-
-<h3 id="llmpersonalizationframework">LLM Personalization Framework</h3>
-
-<p>Theoretical framework for personalizing large language models based on cognitive behavioral therapy principles, focusing on ethical adaptation and user-centered design.</p>
-
-<h2 id="%F0%9F%8F%86professionalaffiliations">🏆 Professional Affiliations</h2>
-
-<ul>
-<li><strong>Association for the Advancement of Artificial Intelligence (AAAI)</strong> - Member #643718</li>
-<li><strong>Association for Computing Machinery (ACM)</strong> - Member #2394181</li>
-<li><strong>Institute of Electrical and Electronics Engineers (IEEE)</strong> - Member #100496098</li>
-<li><strong>Harvard Business Review</strong> - Technical Advisory Member</li>
-</ul>
-
-<h2 id="%F0%9F%93%8Agithubstatistics">📊 GitHub Statistics</h2>
 <div align="center">
 
-<figure>
 <img src="https://github-readme-stats.vercel.app/api?username=dr-gareth-roberts&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF" alt="GitHub Stats" />
-<figcaption>GitHub Stats</figcaption>
-</figure>
 
-<figure>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dr-gareth-roberts&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Languages" />
-<figcaption>Top Languages</figcaption>
-</figure>
-
-<figure>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=dr-gareth-roberts&theme=dark&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=58A6FF&sideLabels=C9D1D9&dates=8B949E" alt="GitHub Streak" />
-<figcaption>GitHub Streak</figcaption>
-</figure>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dr-gareth-roberts&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Languages" />
+
 </div>
 
-<hr />
+---
+
 <div align="center">
 
-<p><em>&#8220;Bridging the gap between how brains think and machines learn&#8221;</em></p>
+*"Bridging the gap between how brains think and machines learn"*
 
-<p><a href="https://linkedin.com/in/dr-gareth-roberts"><img src="https://img.shields.io/badge/Let's_Connect-blue?style=for-the-badge" alt="" /></a></p>
+[![Let's Connect](https://img.shields.io/badge/Let's_Connect-blue?style=for-the-badge)](https://linkedin.com/in/dr-gareth-roberts)
+
 </div>
