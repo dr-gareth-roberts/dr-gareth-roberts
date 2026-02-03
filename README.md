@@ -39,7 +39,7 @@ Boutique AI consultancy delivering cognitive science-informed solutions, special
 
 Built generative AI underwriting assistant achieving **4.4x processing speed improvement** and established APRA-compliant responsible AI governance.
 
-### 🧠 Lead People Scientist | Culture Amp
+### 🧠 Principal AI Specialist | Culture Amp
 `January 2021 - April 2023` | Melbourne, Australia
 
 Applied psychometric modelling and machine learning to employee engagement analytics, developing AI-driven insights for organisational culture.
