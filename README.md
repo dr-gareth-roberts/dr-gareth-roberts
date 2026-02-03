@@ -2,7 +2,7 @@
 
 # Dr. Gareth Roberts
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Senior+AI+Researcher+%7C+Sydney%2C+Australia;Bridging+Cognitive+Neuroscience+%26+AI;15%2B+Years+in+Human-Centered+AI+Design)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Senior+AI+Researcher+%7C+Sydney%2C+Australia;Bridging+Cognitive+Neuroscience+%26+AI;15%2B+Years+in+Human-Centred+AI+Design)](https://git.io/typing-svg)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/dr-gareth-roberts)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gareth.roberts@ieee.org)
@@ -17,13 +17,13 @@
 
 ## 🧠 About
 
-Senior AI Researcher with **15+ years** applying cognitive neuroscience principles to artificial intelligence systems. **PhD in Cognitive Neuroscience & AI** from University of Western Australia. Specializing in human-centered AI design, psychometric modeling, and ethical AI deployment in enterprise environments.
+Senior AI Researcher with **15+ years** applying cognitive neuroscience principles to artificial intelligence systems. **PhD in Cognitive Neuroscience & AI** from University of Western Australia. Specialising in human-centred AI design, psychometric modelling, and ethical AI deployment in enterprise environments.
 
 ### 🔭 Currently Working On
 
 - 🧪 Developing cognitive-inspired architectures for AI alignment research
-- 📝 Writing about AI safety and LLM behavior on [2.works](https://2.works)
-- 🤝 Consulting on human-centered AI solutions at [Hyperpriors](https://hyperpriors.com)
+- 📝 Writing about AI safety and LLM behaviour on [2.works](https://2.works)
+- 🤝 Consulting on human-centred AI solutions at [Hyperpriors](https://hyperpriors.com)
 
 ---
 
@@ -32,39 +32,27 @@ Senior AI Researcher with **15+ years** applying cognitive neuroscience principl
 ### 🏢 Director | Hyperpriors
 `February 2024 - Present` | Sydney, Australia
 
-> Leading boutique AI consultancy specializing in cognitive science-informed AI solutions
-
-- Architect agentic AI systems modeling human decision-making processes
-- Design RAG pipelines with psychological grounding for human-aligned AI interactions
-- Develop behavioral AI evaluation frameworks assessing psychological validity and user trust
+Boutique AI consultancy delivering cognitive science-informed solutions, specialising in agentic AI systems and human-aligned RAG architectures.
 
 ### 🤖 Head of Artificial Intelligence | NEOS Insurance Group
 `April 2023 - February 2024` | Sydney, Australia
 
-> **Key Achievement:** 4.4x processing speed improvement through generative AI
+Built generative AI underwriting assistant achieving **4.4x processing speed improvement** and established APRA-compliant responsible AI governance.
 
-- Built generative AI underwriting assistant achieving 4.4x processing speed improvement
-- Designed psychologically-informed prompt engineering strategies for nuanced decision-making
-- Implemented conversational AI with appropriate empathy and cultural sensitivity
-- Established APRA-compliant responsible AI governance framework
+### 🧠 Lead People Scientist | Culture Amp
+`January 2021 - April 2023` | Melbourne, Australia
+
+Applied psychometric modelling and machine learning to employee engagement analytics, developing AI-driven insights for organisational culture.
 
 ### 🌍 Chief Technology Officer | Source Localisation
 `January 2022 - May 2023` | Sydney, Australia
 
-> Applied cognitive modeling to geospatial intelligence
-
-- Developed AI-assisted decision support tools for geospatial intelligence
-- Built collaborative AI workflows augmenting domain expert capabilities
-- Led multidisciplinary team bridging earth sciences and cognitive systems
+Led AI-assisted geospatial intelligence development, bridging earth sciences and cognitive systems for decision support tools.
 
 ### 🎓 Postdoctoral Research Fellow | University of Sydney
 `August 2016 - December 2021` | Sydney, Australia
 
-> 14 peer-reviewed publications | PhD supervision | Cognitive architectures research
-
-- Conducted research on cognitive architectures for planning and reasoning
-- Published 14 peer-reviewed papers on human intelligence assessment and neuroimaging
-- Supervised PhD students researching cognitive control, attention, and consciousness
+Published 14 peer-reviewed papers on human cognition and neuroimaging while supervising PhD students in cognitive architectures research.
 
 ---
 
@@ -85,10 +73,10 @@ Senior AI Researcher with **15+ years** applying cognitive neuroscience principl
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 
-### Specialized Skills
+### Specialised Skills
 ![Cognitive Science](https://img.shields.io/badge/Cognitive_Science-FF6B6B?style=flat-square)
 ![EEG/fMRI Analysis](https://img.shields.io/badge/EEG%2FfMRI_Analysis-4ECDC4?style=flat-square)
-![Psychometric Modeling](https://img.shields.io/badge/Psychometric_Modeling-45B7D1?style=flat-square)
+![Psychometric Modelling](https://img.shields.io/badge/Psychometric_Modelling-45B7D1?style=flat-square)
 ![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-96CEB4?style=flat-square)
 ![RAG Architectures](https://img.shields.io/badge/RAG_Architectures-FFEAA7?style=flat-square)
 ![Ethical AI](https://img.shields.io/badge/Ethical_AI-DDA0DD?style=flat-square)
@@ -136,8 +124,8 @@ A comprehensive guide to prompt engineering based on cognitive neuroscience prin
 </td>
 <td width="50%">
 
-### LLM Personalization Framework
-Theoretical framework for personalizing large language models based on cognitive behavioral therapy principles, focusing on ethical adaptation and user-centered design.
+### LLM Personalisation Framework
+Theoretical framework for personalising large language models based on cognitive behavioural therapy principles, focusing on ethical adaptation and user-centred design.
 
 </td>
 </tr>
@@ -147,7 +135,7 @@ Theoretical framework for personalizing large language models based on cognitive
 
 ## 🏆 Professional Affiliations
 
-| Organization | Role |
+| Organisation | Role |
 |--------------|------|
 | **Association for the Advancement of Artificial Intelligence (AAAI)** | Member #643718 |
 | **Association for Computing Machinery (ACM)** | Member #2394181 |
