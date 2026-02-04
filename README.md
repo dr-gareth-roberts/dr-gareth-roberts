@@ -17,9 +17,13 @@
 
 ### Current Work
 
-**[insideLLMs](https://github.com/dr-gareth-roberts/insideLLMs)** — Research into LLM behaviour, vulnerabilities, and cognitive patterns
+**[insideLLMs](https://github.com/dr-gareth-roberts/insideLLMs)**
 
-**[adversarial-debate](https://github.com/dr-gareth-roberts/adversarial-debate)** — Exploring adversarial techniques for AI alignment and safety
+Research exploring how large language models process information, make decisions, and exhibit unexpected behaviours. Applies cognitive neuroscience frameworks to understand LLM vulnerabilities and failure modes. Includes experiments on prompt injection, jailbreaking, and emergent cognitive patterns.
+
+**[adversarial-debate](https://github.com/dr-gareth-roberts/adversarial-debate)**
+
+A framework for improving AI reasoning through structured adversarial dialogue. Pits language models against each other in debates to surface weaknesses, reduce hallucinations, and stress-test arguments. Draws on argumentation theory and adversarial training principles for alignment research.
 
 ---
 
