@@ -2,8 +2,6 @@
 
 # Dr. Gareth Roberts
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=false&width=500&height=80&lines=Cognitive+Neuroscientist;AI+Researcher" alt="Typing SVG" />
-
 **Bridging how brains think and machines learn**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/dr-gareth-roberts)
@@ -31,7 +29,7 @@ A framework for improving AI reasoning through structured adversarial dialogue. 
 
 PhD in Cognitive Neuroscience & AI · 15+ years in human-centred AI · 14 publications · h-index 12
 
-**Previously:** Culture Amp · NEOS Insurance · Source Localisation · University of Sydney
+**Career:** Culture Amp · NEOS Insurance · Source Localisation · Hyperpriors · Bloomspace · Bonsai Tech · Woolcock Institute of Medical Research · University of Sydney · Murdoch University
 
 ---
 
@@ -47,7 +45,5 @@ PhD in Cognitive Neuroscience & AI · 15+ years in human-centred AI · 14 public
 ---
 
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=dr-gareth-roberts&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&hide_title=true&hide_rank=true" height="150" />
 
 </div>
