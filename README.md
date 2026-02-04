@@ -2,7 +2,7 @@
 
 # Dr. Gareth Roberts
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=false&width=500&height=80&lines=%F0%9F%A7%A0+Cognitive+Neuroscientist;%F0%9F%A4%96+AI+Researcher" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=false&width=500&height=80&lines=Cognitive+Neuroscientist;AI+Researcher" alt="Typing SVG" />
 
 **Bridging how brains think and machines learn**
 
@@ -15,17 +15,15 @@
 
 ---
 
-### 🔭 What I'm Building
+### Current Work
 
-**[Neuroprompting](https://www.neuroprompting.xyz)** — Prompt engineering through the lens of cognitive neuroscience
+**[insideLLMs](https://github.com/dr-gareth-roberts/insideLLMs)** — Research into LLM behaviour, vulnerabilities, and cognitive patterns
 
-**[Hyperpriors](https://hyperpriors.com)** — AI consultancy specialising in human-centred agentic systems
-
-**Writing** — AI safety & LLM behaviour research on [2.works](https://2.works)
+**[adversarial-debate](https://github.com/dr-gareth-roberts/adversarial-debate)** — Exploring adversarial techniques for AI alignment and safety
 
 ---
 
-### 🧠 Background
+### Background
 
 PhD in Cognitive Neuroscience & AI · 15+ years in human-centred AI · 14 publications · h-index 12
 
@@ -33,7 +31,7 @@ PhD in Cognitive Neuroscience & AI · 15+ years in human-centred AI · 14 public
 
 ---
 
-### 🛠️ Stack
+### Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
