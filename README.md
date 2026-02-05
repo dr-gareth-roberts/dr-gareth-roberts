@@ -2,8 +2,6 @@
 
 # Dr. Gareth Roberts
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=false&width=500&height=80&lines=Cognitive+Neuroscientist;AI+Researcher" alt="Typing SVG" />
-
 **Bridging how brains think and machines learn**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/dr-gareth-roberts)
@@ -19,11 +17,11 @@
 
 **[insideLLMs](https://github.com/dr-gareth-roberts/insideLLMs)**
 
-Research exploring how large language models process information, make decisions, and exhibit unexpected behaviours. Applies cognitive neuroscience frameworks to understand LLM vulnerabilities and failure modes. Includes experiments on prompt injection, jailbreaking, and emergent cognitive patterns.
+insideLLMs is a Python library and CLI for comparing LLM behaviour across models using shared probes and datasets. The harness is deterministic by design, so you can store run artefacts and reliably diff behaviour in CI.
 
 **[adversarial-debate](https://github.com/dr-gareth-roberts/adversarial-debate)**
 
-A framework for improving AI reasoning through structured adversarial dialogue. Pits language models against each other in debates to surface weaknesses, reduce hallucinations, and stress-test arguments. Draws on argumentation theory and adversarial training principles for alignment research.
+Multi‑agent AI security testing framework that orchestrates red‑team analyses, consolidates findings with an arbiter, and records an immutable audit ledger—plus a deterministic demo mode for repeatable results.
 
 ---
 
@@ -31,7 +29,7 @@ A framework for improving AI reasoning through structured adversarial dialogue. 
 
 PhD in Cognitive Neuroscience & AI · 15+ years in human-centred AI · 14 publications · h-index 12
 
-**Previously:** Culture Amp · NEOS Insurance · Source Localisation · University of Sydney
+Culture Amp · NEOS Insurance · Source Localisation · University of Sydney
 
 ---
 
@@ -43,11 +41,3 @@ PhD in Cognitive Neuroscience & AI · 15+ years in human-centred AI · 14 public
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-
----
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=dr-gareth-roberts&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&hide_title=true&hide_rank=true" height="150" />
-
-</div>
