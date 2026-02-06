@@ -53,6 +53,36 @@ body::after {
 ::selection { background: rgba(255,92,0,0.2); color: #fff; }
 a { color: inherit; text-decoration: none; }
 
+/* ── SCROLL PROGRESS ── */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  z-index: 101;
+  will-change: width;
+  pointer-events: none;
+}
+
+/* ── CURSOR SPOTLIGHT ── */
+@media (pointer: fine) {
+  .spotlight {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    background: radial-gradient(circle, rgba(255,92,0,0.04) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    will-change: left, top;
+    transition: opacity 0.4s;
+    opacity: 0;
+  }
+  .spotlight.active { opacity: 1; }
+}
+
 /* ── NAV ── */
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -116,6 +146,7 @@ a { color: inherit; text-decoration: none; }
 .hero-content {
   position: relative; z-index: 1;
   max-width: 1200px; margin: 0 auto; width: 100%;
+  will-change: transform;
 }
 
 .hero-label {
@@ -338,8 +369,10 @@ a { color: inherit; text-decoration: none; }
   padding: 2.25rem 0;
   border-bottom: 1px solid var(--border);
   position: relative;
-  transition: padding 0.5s var(--ease-out);
+  transition: padding 0.5s var(--ease-out), transform 0.4s var(--ease-out);
   color: inherit;
+  transform-style: preserve-3d;
+  perspective: 800px;
 }
 
 .project:first-child { border-top: 1px solid var(--border); }
@@ -554,6 +587,9 @@ a { color: inherit; text-decoration: none; }
 </head>
 <body>
 
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="spotlight" id="spotlight"></div>
+
 <nav class="nav" id="nav">
   <span class="nav-name">Gareth Roberts</span>
   <ul class="nav-links" id="navLinks">
@@ -760,16 +796,28 @@ a { color: inherit; text-decoration: none; }
 <script>
 (function() {
   'use strict';
+  var reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // ── Hero entrance ──
   requestAnimationFrame(function() {
     document.getElementById('hero').classList.add('loaded');
   });
 
-  // ── EEG waveform ──
+  // ── EEG waveform with spike transients ──
   var canvas = document.getElementById('waveCanvas');
   var ctx = canvas.getContext('2d');
   var w, h, dpr, t = 0, raf = null;
+
+  // Pre-compute random spike positions (ERP-like events)
+  var spikes = [];
+  for (var s = 0; s < 12; s++) {
+    spikes.push({
+      pos: Math.random() * 6.28,    // phase position
+      amp: (Math.random() * 0.6 + 0.4) * (Math.random() > 0.5 ? 1 : -1),
+      width: Math.random() * 0.008 + 0.004,
+      trace: Math.floor(Math.random() * 3)
+    });
+  }
 
   function size() {
     dpr = Math.min(devicePixelRatio || 1, 2);
@@ -780,6 +828,11 @@ a { color: inherit; text-decoration: none; }
     canvas.style.width = w + 'px';
     canvas.style.height = h + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function spikeAt(x, center, width) {
+    var d = (x - center) / width;
+    return Math.exp(-0.5 * d * d);
   }
 
   function wave() {
@@ -801,6 +854,15 @@ a { color: inherit; text-decoration: none; }
           + Math.sin(p * 4.3) * 14 * tr.a
           + Math.sin(p * 9.1) * 5 * tr.a
           + Math.sin(p * 0.4) * 45 * tr.a;
+
+        // Add ERP spike transients
+        for (var si = 0; si < spikes.length; si++) {
+          var sp = spikes[si];
+          if (sp.trace !== i) continue;
+          var spikeCenter = ((sp.pos + t * tr.s * 0.08) % 6.28) / 6.28 * w;
+          y += spikeAt(x, spikeCenter, w * sp.width) * 60 * sp.amp * tr.a;
+        }
+
         if (x === 0) ctx.moveTo(x, y);
         else ctx.lineTo(x, y);
       }
@@ -812,22 +874,104 @@ a { color: inherit; text-decoration: none; }
 
   size();
 
-  var heroObs = new IntersectionObserver(function(entries) {
-    for (var i = 0; i < entries.length; i++) {
-      if (entries[i].isIntersecting) {
-        if (!raf) wave();
-      } else {
-        if (raf) { cancelAnimationFrame(raf); raf = null; }
+  if (!reducedMotion) {
+    var heroObs = new IntersectionObserver(function(entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+          if (!raf) wave();
+        } else {
+          if (raf) { cancelAnimationFrame(raf); raf = null; }
+        }
       }
-    }
-  }, { threshold: 0.01 });
-  heroObs.observe(document.getElementById('hero'));
+    }, { threshold: 0.01 });
+    heroObs.observe(document.getElementById('hero'));
+  }
 
   var rt;
   addEventListener('resize', function() {
     clearTimeout(rt);
     rt = setTimeout(size, 200);
   }, { passive: true });
+
+  // ── Cursor spotlight (pointer: fine only) ──
+  var spot = document.getElementById('spotlight');
+  if (spot && matchMedia('(pointer: fine)').matches && !reducedMotion) {
+    var sx = -300, sy = -300, tx = -300, ty = -300;
+    var spotActive = false;
+
+    document.addEventListener('mousemove', function(e) {
+      tx = e.clientX; ty = e.clientY;
+      if (!spotActive) {
+        spotActive = true;
+        spot.classList.add('active');
+      }
+    }, { passive: true });
+
+    document.addEventListener('mouseleave', function() {
+      spotActive = false;
+      spot.classList.remove('active');
+    });
+
+    (function spotLoop() {
+      sx += (tx - sx) * 0.12;
+      sy += (ty - sy) * 0.12;
+      spot.style.left = sx + 'px';
+      spot.style.top = sy + 'px';
+      requestAnimationFrame(spotLoop);
+    })();
+  }
+
+  // ── Scroll progress + hero parallax ──
+  var progressBar = document.getElementById('scrollProgress');
+  var heroContent = document.querySelector('.hero-content');
+  var heroSection = document.getElementById('hero');
+  var scrollTicking = false;
+
+  addEventListener('scroll', function() {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(function() {
+      var scrollY = window.scrollY;
+      var docH = document.documentElement.scrollHeight - window.innerHeight;
+
+      // Progress bar
+      var pct = docH > 0 ? (scrollY / docH) * 100 : 0;
+      progressBar.style.width = pct + '%';
+
+      // Nav
+      nav.classList.toggle('scrolled', scrollY > 40);
+
+      // Hero parallax — title drifts up, fades
+      if (!reducedMotion) {
+        var heroH = heroSection.offsetHeight;
+        if (scrollY < heroH) {
+          var ratio = scrollY / heroH;
+          heroContent.style.transform = 'translateY(' + (scrollY * 0.35) + 'px)';
+          heroContent.style.opacity = 1 - ratio * 1.2;
+        }
+      }
+
+      scrollTicking = false;
+    });
+  }, { passive: true });
+
+  // ── Project tilt on hover (pointer: fine only) ──
+  if (matchMedia('(pointer: fine)').matches && !reducedMotion) {
+    var projects = document.querySelectorAll('.project');
+    for (var pi = 0; pi < projects.length; pi++) {
+      (function(el) {
+        el.addEventListener('mousemove', function(e) {
+          var rect = el.getBoundingClientRect();
+          var x = (e.clientX - rect.left) / rect.width - 0.5;
+          var y = (e.clientY - rect.top) / rect.height - 0.5;
+          el.style.transform = 'perspective(800px) rotateX(' + (y * -3) + 'deg) rotateY(' + (x * 4) + 'deg)';
+        }, { passive: true });
+        el.addEventListener('mouseleave', function() {
+          el.style.transform = '';
+        });
+      })(projects[pi]);
+    }
+  }
 
   // ── Scroll reveals ──
   var rObs = new IntersectionObserver(function(entries) {
@@ -866,17 +1010,8 @@ a { color: inherit; text-decoration: none; }
   var cels = document.querySelectorAll('[data-count]');
   for (var k = 0; k < cels.length; k++) cObs.observe(cels[k]);
 
-  // ── Nav ──
+  // ── Nav ref ──
   var nav = document.getElementById('nav');
-  var st = false;
-  addEventListener('scroll', function() {
-    if (st) return;
-    st = true;
-    requestAnimationFrame(function() {
-      nav.classList.toggle('scrolled', scrollY > 40);
-      st = false;
-    });
-  }, { passive: true });
 
   // ── Mobile ──
   document.getElementById('mobileToggle').addEventListener('click', function() {
@@ -900,9 +1035,7 @@ a { color: inherit; text-decoration: none; }
   }
 
   // ── Reduced motion ──
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    if (raf) { cancelAnimationFrame(raf); raf = null; }
-    heroObs.disconnect();
+  if (reducedMotion) {
     var rvs = document.querySelectorAll('.reveal');
     for (var r = 0; r < rvs.length; r++) rvs[r].classList.add('vis');
     var cntrs = document.querySelectorAll('[data-count]');
