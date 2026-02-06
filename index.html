@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Dr. Gareth Roberts — Cognitive Neuroscience & AI researcher. 15+ years bridging how brains think and machines learn.">
+<title>Dr. Gareth Roberts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root {
+  --bg: #0c0c0c;
+  --surface: #141414;
+  --border: #1e1e1e;
+  --text: #e8e4de;
+  --text-dim: #777;
+  --text-muted: #3a3a3a;
+  --accent: #ff5c00;
+  --accent-dim: rgba(255,92,0,0.07);
+  --font-d: 'Syne', system-ui, sans-serif;
+  --font-b: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-m: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
+  --ease: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body {
+  font-family: var(--font-b);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* film grain */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10000;
+  opacity: 0.028;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 256px;
+}
+
+::selection { background: rgba(255,92,0,0.2); color: #fff; }
+a { color: inherit; text-decoration: none; }
+
+/* ── SCROLL PROGRESS ── */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  z-index: 101;
+  will-change: width;
+  pointer-events: none;
+}
+
+/* ── CURSOR SPOTLIGHT ── */
+@media (pointer: fine) {
+  .spotlight {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    background: radial-gradient(circle, rgba(255,92,0,0.04) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    will-change: left, top;
+    transition: opacity 0.4s;
+    opacity: 0;
+  }
+  .spotlight.active { opacity: 1; }
+}
+
+/* ── NAV ── */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  height: 64px;
+  display: flex; align-items: center; justify-content: space-between;
+  transition: background 0.5s, backdrop-filter 0.5s;
+}
+
+.nav.scrolled {
+  background: rgba(12,12,12,0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-name {
+  font-family: var(--font-d);
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  display: flex; gap: 2.5rem; list-style: none;
+  font-size: 0.75rem; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--text-dim);
+}
+
+.nav-links a { transition: color 0.3s; }
+.nav-links a:hover { color: var(--accent); }
+
+.mobile-toggle {
+  display: none; background: none; border: none;
+  color: var(--text); cursor: pointer; padding: 8px;
+}
+.mobile-toggle span {
+  display: block; width: 20px; height: 1.5px;
+  background: currentColor; margin: 5px 0;
+  transition: all 0.3s var(--ease);
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: clamp(7rem, 18vh, 12rem) clamp(1.5rem, 5vw, 4rem);
+  overflow: hidden;
+}
+
+.hero-canvas {
+  position: absolute; inset: 0;
+  pointer-events: none; z-index: 0;
+  opacity: 0; transition: opacity 2s ease-out;
+}
+
+.hero.loaded .hero-canvas { opacity: 1; }
+
+.hero-content {
+  position: relative; z-index: 1;
+  max-width: 1200px; margin: 0 auto; width: 100%;
+  will-change: transform;
+}
+
+.hero-label {
+  font-family: var(--font-m);
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.hero-label span {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 1.1s var(--ease);
+  transition-delay: 0.15s;
+}
+
+.hero.loaded .hero-label span { transform: translateY(0); }
+
+.hero-title {
+  font-family: var(--font-d);
+  font-size: clamp(3.2rem, 9.5vw, 8.5rem);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  margin-bottom: 2.5rem;
+}
+
+.word-wrap {
+  display: inline-block; overflow: hidden;
+  vertical-align: top; padding-bottom: 0.1em;
+}
+
+.word-wrap .word {
+  display: inline-block;
+  transform: translateY(115%);
+  transition: transform 1.1s var(--ease);
+}
+
+.hero.loaded .word-wrap:nth-child(1) .word { transition-delay: 0.3s; }
+.hero.loaded .word-wrap:nth-child(3) .word { transition-delay: 0.45s; }
+.hero.loaded .word-wrap .word { transform: translateY(0); }
+
+.hero-subtitle {
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  color: var(--text-dim);
+  max-width: 440px;
+  line-height: 1.7;
+  overflow: hidden;
+}
+
+.hero-subtitle span {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 1.1s var(--ease);
+  transition-delay: 0.6s;
+}
+
+.hero.loaded .hero-subtitle span { transform: translateY(0); }
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: clamp(1.5rem, 5vw, 4rem);
+  display: flex; align-items: center; gap: 1rem;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: var(--font-m);
+  opacity: 0;
+  transition: opacity 1s 1.2s;
+}
+
+.hero.loaded .hero-scroll { opacity: 1; }
+
+.scroll-line {
+  width: 40px; height: 1px;
+  background: var(--text-muted);
+  position: relative; overflow: hidden;
+}
+
+.scroll-line::after {
+  content: '';
+  position: absolute; top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: var(--accent);
+  animation: sweep 3s ease-in-out infinite;
+}
+
+@keyframes sweep {
+  0%   { left: -100%; }
+  45%  { left: 100%; }
+  100% { left: 100%; }
+}
+
+/* ── SECTIONS ── */
+.section {
+  padding: clamp(5rem, 12vh, 9rem) clamp(1.5rem, 5vw, 4rem);
+}
+
+.section-inner {
+  max-width: 1200px; margin: 0 auto;
+}
+
+.section-header {
+  display: grid;
+  grid-template-columns: clamp(100px, 16vw, 200px) 1fr;
+  gap: 2rem;
+  margin-bottom: clamp(3rem, 6vh, 5rem);
+  align-items: start;
+}
+
+.section-num {
+  font-family: var(--font-m);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-top: 0.55rem;
+}
+
+.section-title {
+  font-family: var(--font-d);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.divider {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+
+.divider hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ── REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+
+.reveal.vis {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── STATS ── */
+.stats-row {
+  display: flex;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  flex-wrap: wrap;
+}
+
+.stat-val {
+  font-family: var(--font-d);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+}
+
+.stat-key {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin-top: 0.2rem;
+}
+
+/* ── EXPERIENCE ── */
+.exp {
+  display: grid;
+  grid-template-columns: clamp(100px, 16vw, 200px) 1fr;
+  gap: 2rem;
+  margin-top: clamp(3rem, 5vh, 5rem);
+}
+
+.exp-label {
+  font-family: var(--font-m);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-top: 0.2rem;
+}
+
+.exp-items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.6rem;
+  row-gap: 0.3rem;
+}
+
+.exp-item {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
+.exp-dot {
+  color: var(--text-muted);
+  user-select: none;
+}
+
+/* ── PROJECTS ── */
+.projects { display: flex; flex-direction: column; }
+
+.project {
+  display: grid;
+  grid-template-columns: 50px 1fr 32px;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 2.25rem 0;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  transition: padding 0.5s var(--ease-out), transform 0.4s var(--ease-out);
+  color: inherit;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+
+.project:first-child { border-top: 1px solid var(--border); }
+
+.project::before {
+  content: '';
+  position: absolute;
+  left: -clamp(1.5rem, 5vw, 4rem);
+  top: 0; bottom: 0; width: 2px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.6s var(--ease);
+}
+
+.project:hover { padding-left: 0.75rem; }
+.project:hover::before { transform: scaleY(1); }
+
+.project-num {
+  font-family: var(--font-m);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  padding-top: 0.4rem;
+  transition: color 0.3s;
+}
+
+.project:hover .project-num { color: var(--accent); }
+
+.project-name {
+  font-family: var(--font-d);
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.project:hover .project-name { color: var(--accent); }
+
+.project-desc {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  max-width: 540px;
+  line-height: 1.7;
+}
+
+.project-tags {
+  display: flex; flex-wrap: wrap;
+  gap: 0.4rem; margin-top: 1rem;
+}
+
+.ptag {
+  font-family: var(--font-m);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.project:hover .ptag {
+  border-color: rgba(255,92,0,0.2);
+  color: var(--text-dim);
+}
+
+.project-arrow {
+  padding-top: 0.4rem;
+  color: var(--text-muted);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: all 0.4s var(--ease);
+}
+
+.project:hover .project-arrow {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--accent);
+}
+
+/* ── STACK ── */
+.stack-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0;
+}
+
+.stack-name {
+  font-family: var(--font-d);
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-muted);
+  transition: color 0.3s;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.stack-name:hover { color: var(--accent); }
+
+.stack-sep {
+  font-family: var(--font-d);
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--border);
+  padding: 0 clamp(0.6rem, 1.5vw, 1.25rem);
+  user-select: none;
+}
+
+/* ── CONNECT ── */
+.connect-list { display: flex; flex-direction: column; }
+
+.connect-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: padding 0.4s var(--ease-out);
+  color: inherit;
+}
+
+.connect-link:first-child { border-top: 1px solid var(--border); }
+.connect-link:hover { padding-left: 0.75rem; }
+
+.connect-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.connect-type {
+  font-family: var(--font-m);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  width: 72px;
+  flex-shrink: 0;
+}
+
+.connect-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.connect-link:hover .connect-name { color: var(--accent); }
+
+.connect-arrow {
+  color: var(--text-muted);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: all 0.35s var(--ease);
+}
+
+.connect-link:hover .connect-arrow {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--accent);
+}
+
+/* ── FOOTER ── */
+.footer {
+  padding: 4rem clamp(1.5rem, 5vw, 4rem) 3rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex; flex-direction: column;
+    position: absolute; top: 64px; left: 0; right: 0;
+    background: rgba(12,12,12,0.97);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 1.25rem clamp(1.5rem, 5vw, 4rem);
+    gap: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .mobile-toggle { display: block; }
+
+  .section-header { grid-template-columns: 1fr; gap: 0.6rem; }
+  .exp { grid-template-columns: 1fr; gap: 0.6rem; }
+
+  .project {
+    grid-template-columns: 36px 1fr;
+    gap: 1rem;
+  }
+  .project-arrow { display: none; }
+
+  .connect-left { flex-direction: column; align-items: flex-start; gap: 0.15rem; }
+  .connect-type { width: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  .word-wrap .word,
+  .hero-label span,
+  .hero-subtitle span { transform: none; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="spotlight" id="spotlight"></div>
+
+<nav class="nav" id="nav">
+  <span class="nav-name">Gareth Roberts</span>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#connect">Connect</a></li>
+  </ul>
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="hero" id="hero">
+  <canvas class="hero-canvas" id="waveCanvas" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <div class="hero-label"><span>Cognitive Neuroscience &amp; AI</span></div>
+    <h1 class="hero-title">
+      <span class="word-wrap"><span class="word">Dr.&nbsp;Gareth</span></span><br>
+      <span class="word-wrap"><span class="word">Roberts</span></span>
+    </h1>
+    <p class="hero-subtitle">
+      <span>Bridging how brains think and machines learn.</span>
+    </p>
+  </div>
+  <div class="hero-scroll">
+    <span class="scroll-line"></span>
+    Scroll
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<section class="section" id="about">
+  <div class="section-inner">
+    <header class="section-header reveal">
+      <span class="section-num">01 &mdash; About</span>
+      <h2 class="section-title">Fifteen years making<br>AI human-centred.</h2>
+    </header>
+
+    <div class="stats-row reveal">
+      <div>
+        <div class="stat-val" data-count="15">0+</div>
+        <div class="stat-key">Years in AI</div>
+      </div>
+      <div>
+        <div class="stat-val" data-count="14">0</div>
+        <div class="stat-key">Publications</div>
+      </div>
+      <div>
+        <div class="stat-val" data-count="12">0</div>
+        <div class="stat-key">h-index</div>
+      </div>
+      <div>
+        <div class="stat-val">PhD</div>
+        <div class="stat-key">Cognitive Neuroscience</div>
+      </div>
+    </div>
+
+    <div class="exp reveal">
+      <span class="exp-label">Experience</span>
+      <div class="exp-items">
+        <span class="exp-item">Culture Amp</span>
+        <span class="exp-dot">&middot;</span>
+        <span class="exp-item">NEOS Insurance</span>
+        <span class="exp-dot">&middot;</span>
+        <span class="exp-item">Source Localisation</span>
+        <span class="exp-dot">&middot;</span>
+        <span class="exp-item">University of Sydney</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<section class="section" id="work">
+  <div class="section-inner">
+    <header class="section-header reveal">
+      <span class="section-num">02 &mdash; Work</span>
+      <h2 class="section-title">Open-source tools for<br>understanding LLMs.</h2>
+    </header>
+
+    <div class="projects">
+      <a href="https://github.com/dr-gareth-roberts/insideLLMs" class="project reveal" target="_blank" rel="noopener">
+        <span class="project-num">01</span>
+        <div>
+          <div class="project-name">insideLLMs</div>
+          <p class="project-desc">Python library and CLI for comparing LLM behaviour across models using shared probes and datasets. Deterministic by design&mdash;store artefacts and diff behaviour in CI.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">CLI</span>
+            <span class="ptag">LLM Analysis</span>
+            <span class="ptag">CI/CD</span>
+          </div>
+        </div>
+        <span class="project-arrow">&rarr;</span>
+      </a>
+
+      <a href="https://github.com/dr-gareth-roberts/adversarial-debate" class="project reveal" target="_blank" rel="noopener">
+        <span class="project-num">02</span>
+        <div>
+          <div class="project-name">adversarial-debate</div>
+          <p class="project-desc">Multi-agent AI security testing framework. Orchestrates red-team analyses, consolidates findings with an arbiter, and records an immutable audit ledger.</p>
+          <div class="project-tags">
+            <span class="ptag">Security</span>
+            <span class="ptag">Multi-Agent</span>
+            <span class="ptag">Red Team</span>
+            <span class="ptag">Audit</span>
+          </div>
+        </div>
+        <span class="project-arrow">&rarr;</span>
+      </a>
+
+      <a href="https://github.com/dr-gareth-roberts/dr-gareth-roberts/blob/main/fine-tune-gemma-models-in-keras-using-lora.ipynb" class="project reveal" target="_blank" rel="noopener">
+        <span class="project-num">03</span>
+        <div>
+          <div class="project-name">Fine-tuning Gemma with LoRA</div>
+          <p class="project-desc">Step-by-step notebook on parameter-efficient fine-tuning of Google&rsquo;s Gemma 2B using LoRA adapters with KerasNLP. Setup, training, and inference.</p>
+          <div class="project-tags">
+            <span class="ptag">KerasNLP</span>
+            <span class="ptag">Gemma 2B</span>
+            <span class="ptag">LoRA</span>
+            <span class="ptag">Fine-tuning</span>
+          </div>
+        </div>
+        <span class="project-arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<section class="section" id="stack">
+  <div class="section-inner">
+    <header class="section-header reveal">
+      <span class="section-num">03 &mdash; Stack</span>
+      <h2 class="section-title">Core technologies.</h2>
+    </header>
+
+    <div class="stack-row reveal">
+      <span class="stack-name">Python</span>
+      <span class="stack-sep">/</span>
+      <span class="stack-name">PyTorch</span>
+      <span class="stack-sep">/</span>
+      <span class="stack-name">LangChain</span>
+      <span class="stack-sep">/</span>
+      <span class="stack-name">HuggingFace</span>
+      <span class="stack-sep">/</span>
+      <span class="stack-name">R</span>
+      <span class="stack-sep">/</span>
+      <span class="stack-name">TypeScript</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<section class="section" id="connect">
+  <div class="section-inner">
+    <header class="section-header reveal">
+      <span class="section-num">04 &mdash; Connect</span>
+      <h2 class="section-title">Let&rsquo;s talk.</h2>
+    </header>
+
+    <div class="connect-list">
+      <a href="https://linkedin.com/in/dr-gareth-roberts" class="connect-link reveal" target="_blank" rel="noopener">
+        <div class="connect-left">
+          <span class="connect-type">Network</span>
+          <span class="connect-name">LinkedIn</span>
+        </div>
+        <span class="connect-arrow">&rarr;</span>
+      </a>
+      <a href="https://scholar.google.com/citations?hl=en&user=NyJ5KocAAAAJ" class="connect-link reveal" target="_blank" rel="noopener">
+        <div class="connect-left">
+          <span class="connect-type">Research</span>
+          <span class="connect-name">Google Scholar</span>
+        </div>
+        <span class="connect-arrow">&rarr;</span>
+      </a>
+      <a href="https://2.works" class="connect-link reveal" target="_blank" rel="noopener">
+        <div class="connect-left">
+          <span class="connect-type">Writing</span>
+          <span class="connect-name">2.works</span>
+        </div>
+        <span class="connect-arrow">&rarr;</span>
+      </a>
+      <a href="mailto:gareth.roberts@ieee.org" class="connect-link reveal">
+        <div class="connect-left">
+          <span class="connect-type">Email</span>
+          <span class="connect-name">gareth.roberts@ieee.org</span>
+        </div>
+        <span class="connect-arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 Dr. Gareth Roberts</p>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+  var reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ── Hero entrance ──
+  requestAnimationFrame(function() {
+    document.getElementById('hero').classList.add('loaded');
+  });
+
+  // ── EEG waveform with spike transients ──
+  var canvas = document.getElementById('waveCanvas');
+  var ctx = canvas.getContext('2d');
+  var w, h, dpr, t = 0, raf = null;
+
+  // Pre-compute random spike positions (ERP-like events)
+  var spikes = [];
+  for (var s = 0; s < 12; s++) {
+    spikes.push({
+      pos: Math.random() * 6.28,    // phase position
+      amp: (Math.random() * 0.6 + 0.4) * (Math.random() > 0.5 ? 1 : -1),
+      width: Math.random() * 0.008 + 0.004,
+      trace: Math.floor(Math.random() * 3)
+    });
+  }
+
+  function size() {
+    dpr = Math.min(devicePixelRatio || 1, 2);
+    w = canvas.parentElement.offsetWidth;
+    h = canvas.parentElement.offsetHeight;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function spikeAt(x, center, width) {
+    var d = (x - center) / width;
+    return Math.exp(-0.5 * d * d);
+  }
+
+  function wave() {
+    ctx.clearRect(0, 0, w, h);
+    var traces = [
+      { y: h * 0.35, a: 1.0, s: 1.0, o: 0.10 },
+      { y: h * 0.50, a: 0.6, s: 0.6, o: 0.06 },
+      { y: h * 0.65, a: 0.35, s: 1.4, o: 0.035 }
+    ];
+    for (var i = 0; i < traces.length; i++) {
+      var tr = traces[i];
+      ctx.beginPath();
+      ctx.strokeStyle = 'rgba(255,92,0,' + tr.o + ')';
+      ctx.lineWidth = 1.5;
+      for (var x = 0; x < w; x += 2) {
+        var p = x * 0.0025 + t * tr.s * 0.35;
+        var y = tr.y
+          + Math.sin(p * 1.7) * 30 * tr.a
+          + Math.sin(p * 4.3) * 14 * tr.a
+          + Math.sin(p * 9.1) * 5 * tr.a
+          + Math.sin(p * 0.4) * 45 * tr.a;
+
+        // Add ERP spike transients
+        for (var si = 0; si < spikes.length; si++) {
+          var sp = spikes[si];
+          if (sp.trace !== i) continue;
+          var spikeCenter = ((sp.pos + t * tr.s * 0.08) % 6.28) / 6.28 * w;
+          y += spikeAt(x, spikeCenter, w * sp.width) * 60 * sp.amp * tr.a;
+        }
+
+        if (x === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+    }
+    t += 0.016;
+    raf = requestAnimationFrame(wave);
+  }
+
+  size();
+
+  if (!reducedMotion) {
+    var heroObs = new IntersectionObserver(function(entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+          if (!raf) wave();
+        } else {
+          if (raf) { cancelAnimationFrame(raf); raf = null; }
+        }
+      }
+    }, { threshold: 0.01 });
+    heroObs.observe(document.getElementById('hero'));
+  }
+
+  var rt;
+  addEventListener('resize', function() {
+    clearTimeout(rt);
+    rt = setTimeout(size, 200);
+  }, { passive: true });
+
+  // ── Cursor spotlight (pointer: fine only) ──
+  var spot = document.getElementById('spotlight');
+  if (spot && matchMedia('(pointer: fine)').matches && !reducedMotion) {
+    var sx = -300, sy = -300, tx = -300, ty = -300;
+    var spotActive = false;
+
+    document.addEventListener('mousemove', function(e) {
+      tx = e.clientX; ty = e.clientY;
+      if (!spotActive) {
+        spotActive = true;
+        spot.classList.add('active');
+      }
+    }, { passive: true });
+
+    document.addEventListener('mouseleave', function() {
+      spotActive = false;
+      spot.classList.remove('active');
+    });
+
+    (function spotLoop() {
+      sx += (tx - sx) * 0.12;
+      sy += (ty - sy) * 0.12;
+      spot.style.left = sx + 'px';
+      spot.style.top = sy + 'px';
+      requestAnimationFrame(spotLoop);
+    })();
+  }
+
+  // ── Scroll progress + hero parallax ──
+  var progressBar = document.getElementById('scrollProgress');
+  var heroContent = document.querySelector('.hero-content');
+  var heroSection = document.getElementById('hero');
+  var scrollTicking = false;
+
+  addEventListener('scroll', function() {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(function() {
+      var scrollY = window.scrollY;
+      var docH = document.documentElement.scrollHeight - window.innerHeight;
+
+      // Progress bar
+      var pct = docH > 0 ? (scrollY / docH) * 100 : 0;
+      progressBar.style.width = pct + '%';
+
+      // Nav
+      nav.classList.toggle('scrolled', scrollY > 40);
+
+      // Hero parallax — title drifts up, fades
+      if (!reducedMotion) {
+        var heroH = heroSection.offsetHeight;
+        if (scrollY < heroH) {
+          var ratio = scrollY / heroH;
+          heroContent.style.transform = 'translateY(' + (scrollY * 0.35) + 'px)';
+          heroContent.style.opacity = 1 - ratio * 1.2;
+        }
+      }
+
+      scrollTicking = false;
+    });
+  }, { passive: true });
+
+  // ── Project tilt on hover (pointer: fine only) ──
+  if (matchMedia('(pointer: fine)').matches && !reducedMotion) {
+    var projects = document.querySelectorAll('.project');
+    for (var pi = 0; pi < projects.length; pi++) {
+      (function(el) {
+        el.addEventListener('mousemove', function(e) {
+          var rect = el.getBoundingClientRect();
+          var x = (e.clientX - rect.left) / rect.width - 0.5;
+          var y = (e.clientY - rect.top) / rect.height - 0.5;
+          el.style.transform = 'perspective(800px) rotateX(' + (y * -3) + 'deg) rotateY(' + (x * 4) + 'deg)';
+        }, { passive: true });
+        el.addEventListener('mouseleave', function() {
+          el.style.transform = '';
+        });
+      })(projects[pi]);
+    }
+  }
+
+  // ── Scroll reveals ──
+  var rObs = new IntersectionObserver(function(entries) {
+    for (var i = 0; i < entries.length; i++) {
+      if (entries[i].isIntersecting) {
+        entries[i].target.classList.add('vis');
+        rObs.unobserve(entries[i].target);
+      }
+    }
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+  var els = document.querySelectorAll('.reveal');
+  for (var i = 0; i < els.length; i++) rObs.observe(els[i]);
+
+  // ── Counter ──
+  var cObs = new IntersectionObserver(function(entries) {
+    for (var j = 0; j < entries.length; j++) {
+      if (!entries[j].isIntersecting) continue;
+      var el = entries[j].target;
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      if (!target) continue;
+      var dur = 1100, start = performance.now();
+      (function(el, target, dur, start) {
+        function step(now) {
+          var p = Math.min((now - start) / dur, 1);
+          var e = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * e) + '+';
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      })(el, target, dur, start);
+      cObs.unobserve(el);
+    }
+  }, { threshold: 0.5 });
+
+  var cels = document.querySelectorAll('[data-count]');
+  for (var k = 0; k < cels.length; k++) cObs.observe(cels[k]);
+
+  // ── Nav ref ──
+  var nav = document.getElementById('nav');
+
+  // ── Mobile ──
+  document.getElementById('mobileToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  var navAs = document.querySelectorAll('#navLinks a');
+  for (var m = 0; m < navAs.length; m++) {
+    navAs[m].addEventListener('click', function() {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  }
+
+  // ── Smooth scroll ──
+  var anchors = document.querySelectorAll('a[href^="#"]');
+  for (var n = 0; n < anchors.length; n++) {
+    anchors[n].addEventListener('click', function(e) {
+      e.preventDefault();
+      var dest = document.querySelector(this.getAttribute('href'));
+      if (dest) dest.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+
+  // ── Reduced motion ──
+  if (reducedMotion) {
+    var rvs = document.querySelectorAll('.reveal');
+    for (var r = 0; r < rvs.length; r++) rvs[r].classList.add('vis');
+    var cntrs = document.querySelectorAll('[data-count]');
+    for (var c = 0; c < cntrs.length; c++) {
+      var v = parseInt(cntrs[c].getAttribute('data-count'), 10);
+      if (v) cntrs[c].textContent = v + '+';
+    }
+  }
+})();
+</script>
+</body>
+</html>
