@@ -29,7 +29,7 @@ Multi‑agent AI security testing framework that orchestrates red‑team analyse
 
 PhD in Cognitive Neuroscience & AI · 15+ years in human-centred AI · 14 publications · h-index 12
 
-Culture Amp · NEOS Insurance · Source Localisation · University of Sydney
+Hyperpriors ·  Culture Amp · NEOS Insurance · Source Localisation · University of Sydney · Murdoch University · University of Western Australia
 
 ---
 
