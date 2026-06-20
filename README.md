@@ -23,13 +23,21 @@ insideLLMs is a Python library and CLI for comparing LLM behaviour across models
 
 Multi‑agent AI security testing framework that orchestrates red‑team analyses, consolidates findings with an arbiter, and records an immutable audit ledger—plus a deterministic demo mode for repeatable results.
 
+**[context-engineering](https://github.com/dr-gareth-roberts/context-engineering)**
+
+Context engineering toolkit for LLMs — pack, cache, debug, red-team, and orchestrate context windows. Council of Experts, adversarial testing, immune system, context compiler, drift detection, multi-agent entanglement. TypeScript + Python.
+
+**[mineral-prospectivity-mapper](https://github.com/dr-gareth-roberts/mineral-prospectivity-mapper)**
+
+Professional open-source platform for statistical mineral prospectivity mapping (MPM) in Western Australia. Enterprise-grade features: provenance, uncertainty, CV, CLI, QGIS, 2.5D depth, ML explainability, sensitivity analysis, project
+
 ---
 
 ### Background
 
-PhD in Cognitive Neuroscience & AI · 15+ years in human-centred AI · 14 publications · h-index 12
+PhD in Cognitive Neuroscience & AI · 15+ years in human-centred AI · 14 publications · h-index 12 · Learning · Unlearning · Intelligence · Behavioural Control · Latent Measuremnent · 40/30/30 Applied/Academic/Managerial
 
-Hyperpriors ·  Culture Amp · NEOS Insurance · Source Localisation · University of Sydney · Murdoch University · University of Western Australia
+Hyperpriors · Culture Amp · NEOS Life Insurance · Source Localisation · Woolcock Institute of Medical Research · University of Sydney · Murdoch University · University of Cambridge  University of Western Australia
 
 ---
 
